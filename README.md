@@ -55,3 +55,60 @@ It integrates **Deep Learning, Computer Vision, and Sequential Forecasting** to 
 ### 1️⃣ Install Requirements  
 ```bash
 pip install -r requirements.txt
+
+2️⃣ Run Detection
+python detection.py --input video_path --output detections/
+
+3️⃣ Run Tracking
+python tracking.py --detections detections/ --output outputs/
+
+4️⃣ Generate Features
+python feature_engineering.py
+
+5️⃣ Train Transformer Forecasting Model
+python vru_forecasting_transformer.py
+
+📊 Results
+
+Prediction Task: Next (X, Y) position forecasting
+
+True_X	Pred_X	True_Y	Pred_Y
+-0.1430	-0.0200	-1.1667	-0.7944
+-1.1723	-1.2759	-1.1667	-1.0285
+0.7800	0.6092	-2.5331	-1.0167
+
+Loss: ~0.07 (Normalized MSE)
+
+Visualization:
+
+Trajectories of actual vs predicted motion plotted using Matplotlib.
+
+Predicted trajectories closely follow true VRU motion patterns, validating the model’s learning capability.
+
+🧩 Key Highlights
+
+Fully modular pipeline (Detection → Tracking → Forecasting)
+
+Combines YOLO + DeepSORT + Transformers
+
+Scalable to multi-camera urban scenes
+
+Integrates depth and motion cues for better context
+
+Feature-engineered dataset reusable for other forecasting models (LSTM, CNN-LSTM, GRU)
+
+🔮 Future Improvements
+
+Multi-step forecasting for longer prediction horizons
+
+Integrate map or lane context (scene semantics)
+
+Deploy real-time system using ONNX or TorchScript
+
+Introduce uncertainty estimation for safer prediction
+
+👩‍💻 Contributors
+
+Anusri Kadam & Team
+B.Tech – Project-Based Learning (FinTech & AI Vision Domain)
+Supervised by: Faculty, Department of Computer Engineering
