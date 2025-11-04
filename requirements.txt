@@ -1,0 +1,31 @@
+# Core
+streamlit
+numpy
+pandas
+tqdm
+matplotlib
+seaborn
+
+# Deep Learning
+torch
+torchvision
+torchaudio
+
+# Machine Learning Utilities
+scikit-learn
+joblib
+
+# Computer Vision
+opencv-python-headless
+Pillow
+
+# Tracking & Detection (DeepSORT + YOLO)
+filterpy
+ultralytics
+
+# Visualization & Animation
+plotly
+
+# System & Utilities
+psutil
+requests
