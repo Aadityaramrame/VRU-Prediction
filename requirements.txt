@@ -1,6 +1,6 @@
 # Extra index for CPU-based PyTorch builds
 --extra-index-url https://download.pytorch.org/whl/cpu
-
+--upgrade-strategy eager
 # Core
 streamlit
 numpy
