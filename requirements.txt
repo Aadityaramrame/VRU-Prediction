@@ -1,3 +1,6 @@
+# Extra index for CPU-based PyTorch builds
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 # Core
 streamlit
 numpy
@@ -5,9 +8,8 @@ pandas
 tqdm
 matplotlib
 seaborn
-opencv
 
-# Deep Learning
+# Deep Learning (CPU builds)
 torch
 torchvision
 torchaudio
@@ -22,7 +24,7 @@ Pillow
 
 # Tracking & Detection (DeepSORT + YOLO)
 filterpy
-ultralytics
+ultralytics  # works well with YOLOv8 models
 
 # Visualization & Animation
 plotly
