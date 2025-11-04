@@ -5,6 +5,7 @@ pandas
 tqdm
 matplotlib
 seaborn
+cv2
 
 # Deep Learning
 torch
