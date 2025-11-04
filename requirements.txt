@@ -1,34 +1,34 @@
-# Extra index for CPU-based PyTorch builds
---extra-index-url https://download.pytorch.org/whl/cpu
---upgrade-strategy eager
 # Core
-streamlit
-numpy
-pandas
-tqdm
-matplotlib
-seaborn
+streamlit==1.39.0
+numpy==1.26.4
+pandas==2.2.2
+tqdm==4.66.4
+matplotlib==3.9.1
+seaborn==0.13.2
 
-# Deep Learning (CPU builds)
-torch
-torchvision
-torchaudio
+# Deep Learning
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
 
 # Machine Learning Utilities
-scikit-learn
-joblib
+scikit-learn==1.5.0
+joblib==1.4.2
 
 # Computer Vision
-opencv-python-headless
-Pillow
+opencv-python-headless==4.10.0.84
+Pillow==10.3.0
 
-# Tracking & Detection (DeepSORT + YOLO)
-filterpy
-ultralytics  # works well with YOLOv8 models
+# Tracking & Detection
+filterpy==1.4.5
+ultralytics==8.2.74
 
 # Visualization & Animation
-plotly
+plotly==5.22.0
 
 # System & Utilities
-psutil
-requests
+psutil==5.9.8
+requests==2.32.3
+
+# UI Logging
+rich==14.2.0
