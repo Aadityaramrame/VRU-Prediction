@@ -124,5 +124,7 @@ Uncertainty Estimation: Implement techniques to estimate uncertainty for safer p
 ## 👩‍💻 Contributors
 
 Aaditya Ramrame, Aarushi Mathur, Abhav Bhanot, Anusri Kadam
+
 Deep Learning Project
+
 Supervised by: Faculty, Department of Artificial Intelligence and Machine Learning
