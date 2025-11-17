@@ -50,27 +50,41 @@ It integrates **Deep Learning, Computer Vision, and Sequential Forecasting** to 
 
 ---
 
-## 🚀 How to Run  
+## 📋 How to Run
+### 1️⃣ Install Requirements
 
-### 1️⃣ Install Requirements  
-```bash
+First, install the necessary Python dependencies:
+
 pip install -r requirements.txt
 
-2️⃣ Run Detection
+### 2️⃣ Run Detection
+
+Run the detection script on a given video:
+
 python detection.py --input video_path --output detections/
 
-3️⃣ Run Tracking
+### 3️⃣ Run Tracking
+
+Track the detected objects from the previous step:
+
 python tracking.py --detections detections/ --output outputs/
 
-4️⃣ Generate Features
+### 4️⃣ Generate Features
+
+Generate the required features for forecasting:
+
 python feature_engineering.py
 
-5️⃣ Train Transformer Forecasting Model
+### 5️⃣ Train Transformer Forecasting Model
+
+Train the forecasting model using the feature-engineered dataset:
+
 python vru_forecasting_transformer.py
 
-📊 Results
+### 📊 Results
+Prediction Task
 
-Prediction Task: Next (X, Y) position forecasting
+Task: Predict the next (X, Y) position of VRUs (Vulnerable Road Users).
 
 True_X	Pred_X	True_Y	Pred_Y
 -0.1430	-0.0200	-1.1667	-0.7944
@@ -79,36 +93,36 @@ True_X	Pred_X	True_Y	Pred_Y
 
 Loss: ~0.07 (Normalized MSE)
 
-Visualization:
+### Visualization:
 
-Trajectories of actual vs predicted motion plotted using Matplotlib.
+The plot compares actual vs predicted trajectories using Matplotlib.
 
-Predicted trajectories closely follow true VRU motion patterns, validating the model’s learning capability.
+Predicted trajectories closely follow the actual VRU motion patterns, validating the model’s performance.
 
-🧩 Key Highlights
+## 🧩 Key Highlights
 
-Fully modular pipeline (Detection → Tracking → Forecasting)
+Fully Modular Pipeline: Detection → Tracking → Forecasting
 
-Combines YOLO + DeepSORT + Transformers
+YOLO + DeepSORT + Transformers: Combines state-of-the-art techniques for object detection, tracking, and forecasting.
 
-Scalable to multi-camera urban scenes
+Scalable: Can be extended to multi-camera urban environments.
 
-Integrates depth and motion cues for better context
+Context Integration: Combines depth and motion cues for better prediction context.
 
-Feature-engineered dataset reusable for other forecasting models (LSTM, CNN-LSTM, GRU)
+Feature Engineering: Dataset can be reused for other forecasting models like LSTM, CNN-LSTM, and GRU.
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
-Multi-step forecasting for longer prediction horizons
+Multi-Step Forecasting: Expand to forecast longer time horizons.
 
-Integrate map or lane context (scene semantics)
+Scene Semantics: Integrate map or lane context for more precise predictions.
 
-Deploy real-time system using ONNX or TorchScript
+Real-Time System: Deploy the model using ONNX or TorchScript for real-time predictions.
 
-Introduce uncertainty estimation for safer prediction
+Uncertainty Estimation: Implement techniques to estimate uncertainty for safer predictions.
 
-👩‍💻 Contributors
+## 👩‍💻 Contributors
 
-Anusri Kadam & Team
-B.Tech – Project-Based Learning (FinTech & AI Vision Domain)
-Supervised by: Faculty, Department of Computer Engineering
+Aaditya Ramrame, Aarushi Mathur, Abhav Bhanot, Anusri Kadam
+Deep Learning Project
+Supervised by: Faculty, Department of Artificial Intelligence and Machine Learning
